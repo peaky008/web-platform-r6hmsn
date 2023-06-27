@@ -1,0 +1,168 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="first.css">
+    <title>Question 1</title>
+</head>
+<body>
+<main>
+    <header>
+        <!-- insert banner image and logo as seen in the sample website, the links for the images are provided in the question -->
+      <div id="main">
+        <h1>
+            Understanding the fundamentals of state in Javascript
+        </h1>
+        <p>
+            Designed by lingaraj rk
+        </p>
+        <!-- https://jgthms.com/ -->
+      </div>
+
+    </header>
+<!-- <button onclick="change()" id="fun">click on</button> -->
+    <body>
+        <div class="introduction">
+            <p>Chapter 3 from the book; Vumbula React — Co-authored by
+                John Kagga
+            </p>
+
+            <p>
+                In earlier chapters, we’ve dealt mostly with functional React components that do not require state
+                management. This chapter’s main focus is on state, its management and components that utilise it in
+                React.
+            </p>
+        </div>
+
+        <div class="section-1">
+            <h2>
+                What is State?
+            </h2>
+
+            <p>
+                State is a JavaScript object that stores a component’s dynamic data and determines the component’s
+                behaviour. Because state is dynamic, it enables a component to keep track of changing information in
+                between renders and for it to be dynamic and interactive.
+            </p>
+
+            <p>
+                State is similar to props but unlike props, it is private to a component and is controlled solely by the
+                said component. In the examples from previous chapters, the behaviour of components has primarily
+                depended on the props that are passed down to them. In those cases, the components that receive the
+                props have no control over them because props are read-only.
+            </p>
+        </div>
+ <!--footer  -->
+ <!-- <button onclick="change()" id="fun">learn more about css? click here</button> -->
+    </body>
+</main>
+<button onclick="change()" id="fun">learn more about css? click here</button>
+<script>
+    function change(){
+    let container=document.body;
+    let head_section=document.createElement("div");
+    head_section.className="heading";
+    let pic=document.createElement("img");
+    pic.src="logo.jpg";
+    let main_heading=document.createElement("h1");
+    main_heading.innerText="Understanding the fundamentals of state in Javascript";
+    let autohr_name=document.createElement("p");
+    autohr_name.innerText=" Designed by lingaraj rk";
+    head_section.append(pic,main_heading,autohr_name);
+    // container.append(head_section);
+    let intro=document.createElement("div");
+    intro.className="introduction";
+    let p=document.createElement("p");
+    p.innerText="Chapter 3 from the book; Vumbula React — Co-authored by  John Kagga";
+    let p1=document.createElement("p");  
+    p1.innerText="In earlier chapters, we’ve dealt mostly with functional React components that do not require state management. This chapter’s main focus is on state, its management and components that utilise it in React."        
+    intro.append(p,p1);
+    let section1=document.createElement("div")
+    section1.className="section-1";
+    let h2=document.createElement("h2");
+    h2.innerText="What is State?";
+    let p2=document.createElement("p");
+    p2.innerText="State is a JavaScript object that stores a component’s dynamic data and determines the component’sbehaviour. Because state is dynamic, it enables a component to keep track of changing information in  between renders and for it to be dynamic and interactive."
+    let p3=document.createElement("p");
+    p3.innerText="State is similar to props but unlike props, it is private to a component and is controlled solely by the said component. In the examples from previous chapters, the behaviour of components has primarily depended on the props that are passed down to them. In those cases, the components that receive the props have no control over them because props are read-only."
+   section1.append(h2,p2,p3);
+   let section2=document.createElement("div")
+   section2.className="section-2";
+   let h3=document.createElement("h2");
+    h3.innerText="Custom font";
+    let p4=document.createElement("p");
+    p4.innerText= "Since text is the main content of a webpage, using a custom font gives the page even more noticeable identity."
+                     
+    let p5=document.createElement("p");
+    p5.innerText="Adding state to the Greeting component above involves defining within the class component, a constructor function that assigns the initial state using this.state."
+    let p6=document.createElement("p");
+    p6.innerHTML="While you can embed your own webfont or use an online service like Typekit, let's use Roboto from the free Google Fonts service";
+                     
+    section2.append(h3,p4,p5,p6);
+    let section3=document.createElement("div")
+   section3.className="section-3";
+   let h4=document.createElement("h2");
+    h4.innerText=" Investigating State using React Dev Tools";
+    let p7=document.createElement("p");
+    p7.innerText=" The devtools are available for download on both Mozilla Firefox Add-ons and the Chrome Web Store. Follow the appropriate link to install the devtools depending on which browser you have installed on your computer."
+    let p8=document.createElement("p");
+    p8.innerText=" Throughout the rest of this book, Chrome will be used as the browser of choice. In order to confirm successful installation of the devtools on Chrome, open the developer tools window using Cmd+Opt+I on a Mac or Ctrl+Alt+I on a windows PC. You should now see a React tab."
+    section3.append(h4,p7,p8);
+    //section-4
+    let section4=document.createElement("div")
+   section4.className="section-4";
+   let h5=document.createElement("h2");
+   h5.innerText="Learn CSS!";
+   let p9=document.createElement("p");
+   p9.innerText="I've written a 44-page pdf that teaches you how to build your own webpage from scratch. 😃";
+   let pic2=document.createElement("img");
+   pic2.src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGmYBdGz46dQp7H4nFRaHKbHM8BPmkKZHBSs_EHi4vCx2Xj6Lp";
+   let link1=document.createElement("a");
+   link1.href="https://jgthms.com/css-in-44-minutes-ebook/";
+   link1.appendChild(pic2);
+   section4.append(h5,p9,link1);
+   // bottom
+   let section5=document.createElement("div");
+   section5.className="section-5";
+   let h6=document.createElement("h3");
+   h6.innerText="share the love!";
+   let box=document.createElement("div");
+   box.className="box-container";
+   let h7=document.createElement("h5");
+   h7.innerText="facebook";
+   let link2=document.createElement("a");
+   link2.href="https://www.facebook.com/facebook/";
+   link2.append(h7);
+   let h8=document.createElement("h5");
+   h8.innerText="twitter";
+   let link3=document.createElement("a");
+   link3.href="https://twitter.com/";
+   link3.append(h8);
+   let h9=document.createElement("h5");
+   h9.innerText="instagram";
+   let link4=document.createElement("a");
+   link4.href="https://www.instagram.com/accounts/login/";
+   link4.append(h9);
+   box.append(link2,link3,link4)
+   section5.append(h6,box);
+   // main attacher
+    
+    container.append(head_section,intro,section1,section2,section3,section4,section5);
+    // fist part
+    let no_visible=document.getElementById("main");
+    no_visible.style.display="none";   
+    let but=document.getElementById("fun");
+    but.style.display="none";
+    let full_disable=document.getElementsByTagName("main")[0];
+    full_disable.style.display="none";
+    }
+//     Learn CSS!
+// I've written a 44-page pdf that teaches you how to build your own webpage from scratch. 😃 
+</script>
+</body>
+
+</html>

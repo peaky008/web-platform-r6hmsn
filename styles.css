@@ -1,0 +1,215 @@
+#main h1{
+  margin-left: 50px;
+} 
+#main p{
+  margin-left: 50px;
+}
+/* first view */
+button{
+  border:none;
+  background-color: rgb(231, 88, 26);
+  width:100%;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top:20px;
+}
+
+
+/* second view */
+.heading{
+   height: 700px;
+  background-image: url(background.webp);
+background-size:100vw;
+background-repeat: no-repeat;
+
+} 
+img{
+  width:250px;
+  border-radius: 50%;
+  position: relative;
+  left:45vw;
+  top: 180px;
+}
+.heading h1{
+  color: white;
+  font-size:50px;
+  text-align: center;
+  position: relative;
+  bottom: -170px;
+
+}
+.heading p{
+  color: white;
+  font-size: 20px;
+  display: inline;
+  position: relative;
+  bottom: -190px;left: 45vw;
+  border: 2px double rgb(182, 65, 156);
+  padding: 15px;
+  border-radius: 20px; 
+}
+.heading p:hover{
+  background-color: rgb(185, 27, 199);
+  cursor: pointer;
+}
+.introduction{
+  margin-left: 50px;
+  font-size: 20px;
+}
+.section-1{
+  margin-left: 50px;
+  font-size: 20px;
+  margin-right: 100px;
+}
+.section-2{
+  margin-left: 50px;
+  font-size: 20px;
+  margin-right: 100px;
+}
+.section-3{
+  margin-left: 50px;
+  font-size: 20px;
+  margin-right: 100px;
+}
+.section-4{
+    margin-left: 50px;margin-top: 30px;
+    font-size:20px ;  
+}
+.section-4 img{ 
+  margin-left: -900px;margin-top: -150px;
+} 
+.section-5{
+  margin-top: 300px;
+  /* display: flex; */
+  margin-left: 50px;
+  font-size: 20px;
+}
+.section-5 h5{
+  padding:20px;
+  margin-top: 2px;
+  border: 2px solid black;
+  margin-right: 10px;
+  border-radius: 20px;
+   
+}
+.section-5 a{
+  text-decoration: none;
+  color: black;
+}
+.section-5 h5:hover{
+  background-color: rgba(102, 196, 202, 0.724);
+}
+.section-5 h3{
+  font-size:35px !important;
+}
+.box-container{
+  display: flex;
+  margin-left: 70px;
+}
+@media screen and (max-width:1000px) and (min-width:200px) {
+  button{
+      border:none;
+      background-color: rgb(231, 88, 26);
+      width:100vw;
+      padding: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      margin-top:20px;
+  }
+  /* second */
+  .heading{
+      height:35vh;
+     background-image: url(background.webp);
+ background-size:100vw;
+ background-repeat: no-repeat;
+ 
+ }
+ img{
+  width:11vw;
+  border-radius: 50%;
+  position: relative;
+  left:47vw;
+  top:64px;
+}
+.heading h1{
+  color: white;
+  font-size:26px;
+  text-align: center;
+  position: relative;
+  bottom:-45px;
+
+}
+.heading p{
+  color: white;
+  font-size:15px;
+  display: inline;
+  position: relative;
+  bottom:-52px;left:37vw;
+  border: 2px double rgb(182, 65, 156);
+  padding: 15px;
+  border-radius: 20px; 
+}
+.heading p:hover{
+  background-color: rgb(185, 27, 199);
+  cursor: pointer;
+}
+.introduction{
+  margin-left:26px;
+  font-size:15px;
+}
+.section-1{
+  margin-left: 26px;
+  font-size:15px;
+  margin-right:9px;
+}
+.section-2{
+  margin-left:26px;
+  font-size:6px;
+  margin-right:9px;
+}
+.section-3{
+  margin-left: 26px;
+  font-size: 15px;
+  margin-right:9px;
+}
+.section-4{
+    margin-left:26px;margin-top:22px;
+    font-size:15px ;  
+}
+.section-4 img{ 
+  margin-left: -170px;margin-top: -65px;
+} 
+.section-5{
+  margin-top: 54px;
+  display: flex;
+  margin-left: 26px;
+  font-size: 15px;
+}
+.section-5 h5{
+  padding:20px;
+  /* margin-top: 81px; */
+  border: 2px solid black;
+  margin-right: 13px;
+  border-radius: 20px;
+   
+}
+.section-5 a{
+  text-decoration: none;
+  color: black;
+}
+.section-5 h5:hover{
+  background-color: rgba(102, 196, 202, 0.724);
+}
+.section-5 h3{
+  font-size:15px !important;
+}
+.box-container{
+  display: flex;
+  margin-left:-89px;
+  margin-top: 44px;
+}
+}
+
+
+   
